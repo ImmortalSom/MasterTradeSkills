@@ -14,4 +14,4 @@ L["Leatherworking"] = true
 L["Mining"] = true
 L["Poisons"] = true
 L["Tailoring"] = true
-L["Jevelcrafting"] = true
+L["Jewelcrafting"] = true

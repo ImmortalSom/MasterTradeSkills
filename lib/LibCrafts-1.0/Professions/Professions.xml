@@ -9,5 +9,5 @@
     <Script file="Mining.lua" />
     <Script file="Poisons.lua" />
     <Script file="Tailoring.lua" />
-    <Script file="Jevelcrafting.lua" />
+    <Script file="Jewelcrafting.lua" />
 </Ui>
