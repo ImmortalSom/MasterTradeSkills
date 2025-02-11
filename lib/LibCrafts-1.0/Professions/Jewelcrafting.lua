@@ -7,7 +7,7 @@ local Quality = lib.constants.qualities
 local SpellSource = lib.constants.spell_sources
 local RecipeSource = lib.constants.recipe_sources
 
-module:NewCraft(3926, "Copper Modulator", 65, {SpellSource.Trainer})
+module:NewCraft(nul, "Copper Modulator", 65, {SpellSource.Trainer})
     :SetResult(4363)
     :AddReagent(2589, 2) -- Linen Cloth
     :AddReagent(2840, 1) -- Copper Bar
