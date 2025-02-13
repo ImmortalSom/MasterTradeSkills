@@ -182,6 +182,82 @@ if lib.env.is_turtle_wow then
         :AddReagent(55151, 4) -- Coarse Gritted Paper
         :AddReagent(55245, 2) -- Polishing Oil
         :Save()
+    module:NewCraft(0, "Bronze Cuffed Bangles", 105, {SpellSource.Trainer})
+        :SetResult(41310)
+        :AddReagent(2841, 6) -- Bronze Bar
+        :AddReagent(2880, 2) -- Weak Flux
+        :AddReagent(55245, 2) -- Polishing Oil
+        :Save()
+    module:NewCraft(0, "Shadowgem Band", 105, {SpellSource.Trainer})
+        :SetResult(41311)
+        :AddReagent(55174, 1) -- Rough Bronze Ring
+        :AddReagent(1210, 2) -- Shadowgem
+        :AddReagent(55246, 1) -- Shimmering Oil
+        :Save()
+    module:NewCraft(0, "Bronze Scepter", 110, {SpellSource.Trainer})
+        :SetResult(41313)
+        :AddReagent(2841, 6) -- Bronze Bar
+        :AddReagent(55246, 1) -- Shimmering Oil
+        :AddReagent(55151, 4) -- Coarse Gritted Paper
+        :Save()
+    module:NewCraft(0, "Pendant of Midnight", 120, {SpellSource.Trainer})
+        :SetResult(41312)
+        :AddReagent(2841, 6) -- Bronze Bar
+        :AddReagent(1210, 3) -- Shadowgem
+        :AddReagent(785, 1) -- Mageroyal
+        :AddReagent(55246, 1) -- Shimmering Oil
+        :Save()
+    module:NewCraft(0, "Agatestone Crown", 125, {SpellSource.Trainer})
+        :SetResult(41314)
+        :AddReagent(2841, 6) -- Bronze Bar
+        :AddReagent(1206, 1) -- Moss Agate
+        :AddReagent(3466, 2) -- Strong Flux
+        :AddReagent(55151, 2) -- Coarse Gritted Paper
+        :Save()
+    module:NewCraft(0, "Binding Signet", 125, {SpellSource.Trainer})
+        :SetResult(41316)
+        :AddReagent(55174, 1) -- Rough Bronze Ring
+        :AddReagent(1705, 2) -- Lesser Moonstone
+        :AddReagent(3385, 1) -- Lesser Mana Potion
+        :Save()
+    module:NewCraft(0, "Coarse Gemstone Cluster", 125, {SpellSource.Trainer})
+        :SetResult(41320)
+        :AddReagent(2771, 2) -- Tin Ore
+        :AddReagent(55151, 2) -- Coarse Gritted Paper
+        :Save()
+    module:NewCraft(0, "Enchanted Bracelets", 125, {SpellSource.Trainer})
+        :SetResult(41318)
+        :AddReagent(2842, 3) -- Silver Bar
+        :AddReagent(10998, 1) -- Lesser Astral Essence
+        :AddReagent(1210, 1) -- Shadowgem
+        :Save()
+    module:NewCraft(0, "Moonlight Staff", 125, {SpellSource.Trainer})
+        :SetResult(41315)
+        :AddReagent(2841, 8) -- Bronze Bar
+        :AddReagent(1705, 3) -- Lesser Moonstone
+        :AddReagent(3466, 1) -- Strong Flux
+        :AddReagent(55246, 1) -- Shimmering Oil
+        :Save()
+    module:NewCraft(0, "Rough Silver Ring", 125, {SpellSource.Trainer})
+        :SetResult(41319)
+        :AddReagent(2842, 2) -- Silver Bar
+        :Save()
+    module:NewCraft(0, "Ring of Purified Silver", 135, {SpellSource.Trainer})
+        :SetResult(41329)
+        :AddReagent(41319, 1) -- Rough Silver Ring
+        :AddReagent(3466, 2) -- Strong Flux
+        :AddReagent(55246, 4) -- Shimmering Oil
+        :AddReagent(55151, 8) -- Coarse Gritted Paper
+        :AddReagent(55249, 3) -- Crystal Quartz
+        :AddReagent(1206, 3) -- Moss Agate
+        :Save()
+    module:NewCraft(0, "Silver Medallion", 135, {SpellSource.Trainer})
+        :SetResult(41325)
+        :AddReagent(2842, 5) -- Silver Bar
+        :AddReagent(3466, 1) -- Strong Flux
+        :AddReagent(55246, 2) -- Shimmering Oil
+        :AddReagent(55151, 2) -- Coarse Gritted Paper
+        :Save()
 
 
 
