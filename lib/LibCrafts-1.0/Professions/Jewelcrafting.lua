@@ -22,7 +22,6 @@ if lib.env.is_turtle_wow then
 
 
 
-
     module:NewCraft(0, "Bright Copper Ring", 15, {SpellSource.Trainer})
         :SetResult(55158)
         :AddReagent(55156, 1) -- Rough Copper Ring
@@ -182,6 +181,19 @@ if lib.env.is_turtle_wow then
         :AddReagent(81094, 1) -- Amber Topaz
         :AddReagent(55151, 4) -- Coarse Gritted Paper
         :AddReagent(55245, 2) -- Polishing Oil
+        :Save()
+
+
+
+
+
+    module:NewCraft(0, "Shadowfall Jewel", 100, {})
+        :SetResult(55318)
+        :AddRecipe(70143, Quality.Uncommon, {RecipeSource.Drop})
+        :AddReagent(55174, 1) -- Rough Bronze Ring
+        :AddReagent(1210, 1) -- Shadowgem
+        :AddReagent(81094, 1) -- Amber Topaz
+        :AddReagent(55150, 1) -- Rough Gritted Paper
         :Save()
 
 
