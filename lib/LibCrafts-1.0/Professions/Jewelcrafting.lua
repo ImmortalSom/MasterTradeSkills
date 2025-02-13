@@ -8,12 +8,12 @@ local SpellSource = lib.constants.spell_sources
 local RecipeSource = lib.constants.recipe_sources
 
 if lib.env.is_turtle_wow then
-    module:NewCraft(0, "Rough Gritted Paper", 1, {SpellSource.LearnedAutomatically})
+    module:NewCraft(999999, "Rough Gritted Paper", 1, {SpellSource.LearnedAutomatically})
         :SetResult(55150)
         :AddReagent(2589, 1) -- Linen Cloth
         :AddReagent(2835, 1) -- Rough Stone
         :Save()
-    module:NewCraft(0, "Rough Copper Ring", 1, {SpellSource.LearnedAutomatically})
+    module:NewCraft(999998, "Rough Copper Ring", 1, {SpellSource.LearnedAutomatically})
         :SetResult(55156)
         :AddReagent(2840, 2) -- Copper Bar
         :Save()
@@ -22,118 +22,118 @@ if lib.env.is_turtle_wow then
 
 
 
-    module:NewCraft(0, "Bright Copper Ring", 15, {SpellSource.Trainer})
+    module:NewCraft(999997, "Bright Copper Ring", 15, {SpellSource.Trainer})
         :SetResult(55158)
         :AddReagent(55156, 1) -- Rough Copper Ring
         :AddReagent(55245, 1) -- Polishing Oil
         :Save()
-    module:NewCraft(0, "Malachite Ring", 20, {SpellSource.Trainer})
+    module:NewCraft(999996, "Malachite Ring", 20, {SpellSource.Trainer})
         :SetResult(81030)
         :AddReagent(55156, 1) -- Rough Copper Ring
         :AddReagent(774, 1) -- Malachite
         :AddReagent(55150, 1) -- Rough Gritted Paper
         :Save()
-    module:NewCraft(0, "Rough Gemstone Cluster", 25, {SpellSource.Trainer})
+    module:NewCraft(999995, "Rough Gemstone Cluster", 25, {SpellSource.Trainer})
         :SetResult(81032)
         :AddReagent(55150, 1) -- Rough Gritted Paper
         :AddReagent(2770, 1) -- Copper Ore
         :Save()
-    module:NewCraft(0, "Sturdy Copper Ring", 25, {SpellSource.Trainer})
+    module:NewCraft(999994, "Sturdy Copper Ring", 25, {SpellSource.Trainer})
         :SetResult(55159)
         :AddReagent(55156, 1) -- Rough Copper Ring
         :AddReagent(2840, 1) -- Copper Bar
         :AddReagent(55150, 2) -- Rough Gritted Paper
         :Save()
-    module:NewCraft(0, "Inlaid Copper Ring", 35, {SpellSource.Trainer})
+    module:NewCraft(999993, "Inlaid Copper Ring", 35, {SpellSource.Trainer})
         :SetResult(55160)
         :AddReagent(55156, 1) -- Rough Copper Ring
         :AddReagent(55245, 1) -- Polishing Oil
         :AddReagent(55150, 4) -- Rough Gritted Paper
         :AddReagent(818, 1) -- Tigerseye
         :Save()
-    module:NewCraft(0, "Copper Staff", 40, {SpellSource.Trainer})
+    module:NewCraft(999992, "Copper Staff", 40, {SpellSource.Trainer})
         :SetResult(81092)
         :AddReagent(2840, 4) -- Copper Bar
         :AddReagent(55245, 1) -- Polishing Oil
         :Save()
-    module:NewCraft(0, "Encrusted Copper Bangle", 50, {SpellSource.Trainer})
+    module:NewCraft(999991, "Encrusted Copper Bangle", 50, {SpellSource.Trainer})
         :SetResult(55161)
         :AddReagent(2840, 4) -- Copper Bar
         :AddReagent(55245, 2) -- Polishing Oil
         :AddReagent(774, 1) -- Malachite
         :Save()
-    module:NewCraft(0, "Lesser Fortification Ring", 50, {SpellSource.Trainer})
+    module:NewCraft(999990, "Lesser Fortification Ring", 50, {SpellSource.Trainer})
         :SetResult(55162)
         :AddReagent(55156, 1) -- Rough Copper Ring
         :AddReagent(5997, 1) -- Elixir of Minor Defense
         :AddReagent(774, 1) -- Malachite
         :Save()
-    module:NewCraft(0, "Tigercrest Ring", 50, {SpellSource.Trainer})
+    module:NewCraft(999989, "Tigercrest Ring", 50, {SpellSource.Trainer})
         :SetResult(55163)
         :AddReagent(55156, 1) -- Rough Copper Ring
         :AddReagent(55150, 1) -- Rough Gritted Paper
         :AddReagent(55245, 1) -- Polishing Oil
         :AddReagent(818, 1) -- Tigerseye
         :Save()
-    module:NewCraft(0, "Small Pearlstone Staff", 55, {SpellSource.Trainer})
+    module:NewCraft(999988, "Small Pearlstone Staff", 55, {SpellSource.Trainer})
         :SetResult(55165)
         :AddReagent(2840, 10) -- Copper Bar
         :AddReagent(55150, 4) -- Rough Gritted Paper
         :AddReagent(5498, 2) -- Small Lustrous Pearl
         :Save()
-    module:NewCraft(0, "Amber Ring", 60, {SpellSource.Trainer})
+    module:NewCraft(999987, "Amber Ring", 60, {SpellSource.Trainer})
         :SetResult(55166)
         :AddReagent(55156, 1) -- Rough Copper Ring
         :AddReagent(55150, 1) -- Rough Gritted Paper
         :AddReagent(81094, 1) -- Amber Topaz
         :Save()
-    module:NewCraft(0, "Azure Ring", 60, {SpellSource.Trainer})
+    module:NewCraft(999986, "Azure Ring", 60, {SpellSource.Trainer})
         :SetResult(55167)
         :AddReagent(55156, 1) -- Rough Copper Ring
         :AddReagent(55245, 1) -- Polishing Oil
         :AddReagent(1210, 1) -- Shadowgem
         :AddReagent(159, 5) -- Refreshing Spring Water
         :Save()
-    module:NewCraft(0, "Bright Copper Necklace", 65, {SpellSource.Trainer})
+    module:NewCraft(999985, "Bright Copper Necklace", 65, {SpellSource.Trainer})
         :SetResult(81031)
         :AddReagent(2840, 6) -- Copper Bar
         :AddReagent(774, 2) -- Malachite
         :AddReagent(55245, 1) -- Polishing Oil
         :Save()
-    module:NewCraft(0, "Softglow Ring", 65, {SpellSource.Trainer})
+    module:NewCraft(999984, "Softglow Ring", 65, {SpellSource.Trainer})
         :SetResult(55168)
         :AddReagent(55156, 1) -- Rough Copper Ring
         :AddReagent(774, 1) -- Malachite
         :AddReagent(2880, 1) -- Weak Flux
         :AddReagent(818, 1) -- Tigerseye
         :Save()
-    module:NewCraft(0, "Coarse Gritted Paper", 70, {SpellSource.Trainer})
+    module:NewCraft(999983, "Coarse Gritted Paper", 70, {SpellSource.Trainer})
         :SetResult(55151)
         :AddReagent(2592, 2) -- Wool Cloth
         :AddReagent(2836, 2) -- Coarse Stone
         :Save()
-    module:NewCraft(0, "Topaz Studded Ring", 70, {SpellSource.Trainer})
+    module:NewCraft(999982, "Topaz Studded Ring", 70, {SpellSource.Trainer})
         :SetResult(55170)
         :AddReagent(55156, 1) -- Rough Copper Ring
         :AddReagent(81094, 2) -- Amber Topaz
         :AddReagent(2880, 1) -- Weak Flux
         :AddReagent(55150, 1) -- Rough Gritted Paper
         :Save()
-    module:NewCraft(0, "Amberstone Pendant", 80, {SpellSource.Trainer})
+    module:NewCraft(999981, "Amberstone Pendant", 80, {SpellSource.Trainer})
         :SetResult(55172)
         :AddReagent(2840, 6) -- Copper Bar
         :AddReagent(81094, 3) -- Amber Topaz
         :AddReagent(55245, 1) -- Polishing Oil
         :AddReagent(55150, 4) -- Rough Gritted Paper
         :Save()
-    module:NewCraft(0, "Amberstone Pendant", 80, {SpellSource.Trainer})
+    module:NewCraft(999980, "Amberstone Pendant", 80, {SpellSource.Trainer})
         :SetResult(55172)
         :AddReagent(2840, 6) -- Copper Bar
         :AddReagent(81094, 3) -- Amber Topaz
         :AddReagent(55245, 1) -- Polishing Oil
         :AddReagent(55150, 4) -- Rough Gritted Paper
         :Save()
-    module:NewCraft(0, "Lavish Gemmed Necklace", 80, {SpellSource.Trainer})
+    module:NewCraft(999979, "Lavish Gemmed Necklace", 80, {SpellSource.Trainer})
         :SetResult(55171)
         :AddReagent(2840, 8) -- Copper Bar
         :AddReagent(81094, 1) -- Amber Topaz
@@ -141,7 +141,7 @@ if lib.env.is_turtle_wow then
         :AddReagent(2880, 1) -- Weak Flux
         :AddReagent(1210, 1) -- Shadowgem
         :Save()
-    module:NewCraft(0, "Deepmist Choker", 85, {SpellSource.Trainer})
+    module:NewCraft(999978, "Deepmist Choker", 85, {SpellSource.Trainer})
         :SetResult(55173)
         :AddReagent(2840, 8) -- Copper Bar
         :AddReagent(5498, 1) -- Small Lustrous Pearl
@@ -149,32 +149,32 @@ if lib.env.is_turtle_wow then
         :AddReagent(2880, 1) -- Weak Flux
         :AddReagent(55150, 2) -- Rough Gritted Paper
         :Save()
-    module:NewCraft(0, "Rough Bronze Ring", 90, {SpellSource.Trainer})
+    module:NewCraft(999977, "Rough Bronze Ring", 90, {SpellSource.Trainer})
         :SetResult(55174)
         :AddReagent(2841, 2) -- Bronze Bar
         :Save()
-    module:NewCraft(0, "Shimmering Bronze Ring", 90, {SpellSource.Trainer})
+    module:NewCraft(999976, "Shimmering Bronze Ring", 90, {SpellSource.Trainer})
         :SetResult(41308)
         :AddReagent(55174, 1) -- Rough Bronze Ring
         :AddReagent(55246, 1) -- Shimmering Oil
         :AddReagent(2880, 2) -- Weak Flux
         :AddReagent(55151, 2) -- Coarse Gritted Paper
         :Save()
-    module:NewCraft(0, "Amber Orb", 95, {SpellSource.Trainer})
+    module:NewCraft(999975, "Amber Orb", 95, {SpellSource.Trainer})
         :SetResult(41309)
         :AddReagent(2841, 2) -- Bronze Bar
         :AddReagent(81094, 3) -- Amber Topaz
         :AddReagent(55150, 4) -- Rough Gritted Paper
         :AddReagent(55245, 1) -- Polishing Oil
         :Save()
-    module:NewCraft(0, "Earthrock Loop", 100, {SpellSource.Trainer})
+    module:NewCraft(999974, "Earthrock Loop", 100, {SpellSource.Trainer})
         :SetResult(55176)
         :AddReagent(55174, 1) -- Rough Bronze Ring
         :AddReagent(2449, 3) -- Earthroot
         :AddReagent(2836, 6) -- Coarse Stone
         :AddReagent(2880, 4) -- Weak Flux
         :Save()
-    module:NewCraft(0, "Encrusted Bronze Staff", 100, {SpellSource.Trainer})
+    module:NewCraft(999973, "Encrusted Bronze Staff", 100, {SpellSource.Trainer})
         :SetResult(55175)
         :AddReagent(2841, 8) -- Bronze Bar
         :AddReagent(1210, 1) -- Shadowgem
@@ -182,67 +182,67 @@ if lib.env.is_turtle_wow then
         :AddReagent(55151, 4) -- Coarse Gritted Paper
         :AddReagent(55245, 2) -- Polishing Oil
         :Save()
-    module:NewCraft(0, "Bronze Cuffed Bangles", 105, {SpellSource.Trainer})
+    module:NewCraft(999972, "Bronze Cuffed Bangles", 105, {SpellSource.Trainer})
         :SetResult(41310)
         :AddReagent(2841, 6) -- Bronze Bar
         :AddReagent(2880, 2) -- Weak Flux
         :AddReagent(55245, 2) -- Polishing Oil
         :Save()
-    module:NewCraft(0, "Shadowgem Band", 105, {SpellSource.Trainer})
+    module:NewCraft(999971, "Shadowgem Band", 105, {SpellSource.Trainer})
         :SetResult(41311)
         :AddReagent(55174, 1) -- Rough Bronze Ring
         :AddReagent(1210, 2) -- Shadowgem
         :AddReagent(55246, 1) -- Shimmering Oil
         :Save()
-    module:NewCraft(0, "Bronze Scepter", 110, {SpellSource.Trainer})
+    module:NewCraft(999970, "Bronze Scepter", 110, {SpellSource.Trainer})
         :SetResult(41313)
         :AddReagent(2841, 6) -- Bronze Bar
         :AddReagent(55246, 1) -- Shimmering Oil
         :AddReagent(55151, 4) -- Coarse Gritted Paper
         :Save()
-    module:NewCraft(0, "Pendant of Midnight", 120, {SpellSource.Trainer})
+    module:NewCraft(999969, "Pendant of Midnight", 120, {SpellSource.Trainer})
         :SetResult(41312)
         :AddReagent(2841, 6) -- Bronze Bar
         :AddReagent(1210, 3) -- Shadowgem
         :AddReagent(785, 1) -- Mageroyal
         :AddReagent(55246, 1) -- Shimmering Oil
         :Save()
-    module:NewCraft(0, "Agatestone Crown", 125, {SpellSource.Trainer})
+    module:NewCraft(999968, "Agatestone Crown", 125, {SpellSource.Trainer})
         :SetResult(41314)
         :AddReagent(2841, 6) -- Bronze Bar
         :AddReagent(1206, 1) -- Moss Agate
         :AddReagent(3466, 2) -- Strong Flux
         :AddReagent(55151, 2) -- Coarse Gritted Paper
         :Save()
-    module:NewCraft(0, "Binding Signet", 125, {SpellSource.Trainer})
+    module:NewCraft(999967, "Binding Signet", 125, {SpellSource.Trainer})
         :SetResult(41316)
         :AddReagent(55174, 1) -- Rough Bronze Ring
         :AddReagent(1705, 2) -- Lesser Moonstone
         :AddReagent(3385, 1) -- Lesser Mana Potion
         :Save()
-    module:NewCraft(0, "Coarse Gemstone Cluster", 125, {SpellSource.Trainer})
+    module:NewCraft(999966, "Coarse Gemstone Cluster", 125, {SpellSource.Trainer})
         :SetResult(41320)
         :AddReagent(2771, 2) -- Tin Ore
         :AddReagent(55151, 2) -- Coarse Gritted Paper
         :Save()
-    module:NewCraft(0, "Enchanted Bracelets", 125, {SpellSource.Trainer})
+    module:NewCraft(999965, "Enchanted Bracelets", 125, {SpellSource.Trainer})
         :SetResult(41318)
         :AddReagent(2842, 3) -- Silver Bar
         :AddReagent(10998, 1) -- Lesser Astral Essence
         :AddReagent(1210, 1) -- Shadowgem
         :Save()
-    module:NewCraft(0, "Moonlight Staff", 125, {SpellSource.Trainer})
+    module:NewCraft(999964, "Moonlight Staff", 125, {SpellSource.Trainer})
         :SetResult(41315)
         :AddReagent(2841, 8) -- Bronze Bar
         :AddReagent(1705, 3) -- Lesser Moonstone
         :AddReagent(3466, 1) -- Strong Flux
         :AddReagent(55246, 1) -- Shimmering Oil
         :Save()
-    module:NewCraft(0, "Rough Silver Ring", 125, {SpellSource.Trainer})
+    module:NewCraft(999963, "Rough Silver Ring", 125, {SpellSource.Trainer})
         :SetResult(41319)
         :AddReagent(2842, 2) -- Silver Bar
         :Save()
-    module:NewCraft(0, "Ring of Purified Silver", 135, {SpellSource.Trainer})
+    module:NewCraft(999962, "Ring of Purified Silver", 135, {SpellSource.Trainer})
         :SetResult(41329)
         :AddReagent(41319, 1) -- Rough Silver Ring
         :AddReagent(3466, 2) -- Strong Flux
@@ -251,7 +251,7 @@ if lib.env.is_turtle_wow then
         :AddReagent(55249, 3) -- Crystal Quartz
         :AddReagent(1206, 3) -- Moss Agate
         :Save()
-    module:NewCraft(0, "Silver Medallion", 135, {SpellSource.Trainer})
+    module:NewCraft(999961, "Silver Medallion", 135, {SpellSource.Trainer})
         :SetResult(41325)
         :AddReagent(2842, 5) -- Silver Bar
         :AddReagent(3466, 1) -- Strong Flux
@@ -263,7 +263,7 @@ if lib.env.is_turtle_wow then
 
 
 
-    module:NewCraft(0, "Shadowfall Jewel", 100, {})
+    module:NewCraft(999960, "Shadowfall Jewel", 100, {})
         :SetResult(55318)
         :AddRecipe(70143, Quality.Uncommon, {RecipeSource.Drop})
         :AddReagent(55174, 1) -- Rough Bronze Ring
