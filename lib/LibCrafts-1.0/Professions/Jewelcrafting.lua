@@ -258,6 +258,34 @@ if lib.env.is_turtle_wow then
         :AddReagent(55246, 2) -- Shimmering Oil
         :AddReagent(55151, 2) -- Coarse Gritted Paper
         :Save()
+    module:NewCraft(999959, "Rough Gold Ring", 150, {SpellSource.Trainer})
+        :SetResult(41331)
+        :AddReagent(3577, 2) -- Gold Bar
+        :Save()
+    module:NewCraft(999959, "Rough Gold Ring", 150, {SpellSource.Trainer})
+        :SetResult(41331)
+        :AddReagent(3577, 2) -- Gold Bar
+        :Save()
+    module:NewCraft(999958, "Rough Iron Ring", 150, {SpellSource.Trainer})
+        :SetResult(41332)
+        :AddReagent(3575, 2) -- Iron Bar
+        :Save()
+    module:NewCraft(999957, "Heavy Gritted Paper", 150, {SpellSource.Trainer})
+        :SetResult(55152)
+        :AddReagent(4306, 3) -- Silk Cloth
+        :AddReagent(2838, 3) -- Heavy Stone
+        :Save()
+    module:NewCraft(999956, "Heavy Gemstone Cluster", 150, {SpellSource.Trainer})
+        :SetResult(41344)
+        :AddReagent(2772, 3) -- Iron Ore
+        :AddReagent(55152, 3) -- Heavy Gritted Paper
+        :Save()
+    module:NewCraft(999955, "Pristine Crystal Gemstone", 150, {SpellSource.Trainer})
+        :SetResult(56000)
+        :AddReagent(55249, 1) -- Crystal Quartz
+        :AddReagent(55151, 1) -- Coarse Gritted Paper
+        :AddReagent(55247, 1) -- Gemstone Oil
+        :Save()
 
 
 
