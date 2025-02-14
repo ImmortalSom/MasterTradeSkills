@@ -405,6 +405,13 @@ if lib.env.is_turtle_wow then
         :AddReagent(1206, 2) -- Moss Agate
         :AddReagent(55245, 1) -- Polishing Oil
         :Save()
+    module:NewCraft(999931, "Ocean's Wrath", 115, {})
+        :SetResult(55319)
+        :AddRecipe(70144, Quality.Uncommon, {RecipeSource.Vendor})
+        :AddReagent(55174, 1) -- Rough Bronze Ring
+        :AddReagent(5498, 1) -- Small Lustrous Pearl
+        :AddReagent(2880, 1) -- Weak Flux
+        :Save()
     module:NewCraft(999947, "Ring of Midnight", 125, {})
         :SetResult(56091)
         :AddRecipe(70208, Quality.Uncommon, {})
