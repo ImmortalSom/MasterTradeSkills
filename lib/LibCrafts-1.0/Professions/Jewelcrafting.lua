@@ -497,6 +497,14 @@ if lib.env.is_turtle_wow then
         :AddReagent(1206, 2) -- Moss Agate
         :AddReagent(3389, 1) -- Elixir of Defense
         :Save()
+    module:NewCraft(999926, "Gem Encrusted Choker", 160, {SpellSource.Trainer})
+        :SetResult(56042)
+        :AddRecipe(70116, Quality.Uncommon, {RecipeSource.Drop})
+        :AddReagent(3575, 5) -- Iron Bar
+        :AddReagent(1206, 1) -- Moss Agate
+        :AddReagent(55249, 1) -- Crystal Quartz 
+        :AddReagent(1705, 1) -- Lesser Moonstone
+        :Save()
 
 
 
