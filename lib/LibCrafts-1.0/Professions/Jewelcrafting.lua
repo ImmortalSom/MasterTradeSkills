@@ -474,7 +474,7 @@ if lib.env.is_turtle_wow then
         :AddReagent(3388, 2) -- Strong Troll's Blood Potion
         :AddReagent(55151, 2) -- Coarse Gritted Paper
         :Save()
-    module:NewCraft(999925, "Harpy Talon Ring", 145, {SpellSource.Trainer})
+    module:NewCraft(999925, "Harpy Talon Ring", 145, {})
         :SetResult(55321)
         :AddRecipe(70146, Quality.Uncommon, {})
         :AddReagent(55174, 1) -- Rough Bronze Ring
@@ -489,7 +489,7 @@ if lib.env.is_turtle_wow then
         :AddReagent(55246, 2) -- Shimmering Oil
         :AddReagent(55247, 1) -- Gemstone Oil
         :Save()
-    module:NewCraft(999928, "Gemmed Citrine Pendant", 160, {SpellSource.Trainer})
+    module:NewCraft(999928, "Gemmed Citrine Pendant", 160, {})
         :SetResult(55202)
         :AddRecipe(70104, Quality.Rare, {RecipeSource.Drop})
         :AddReagent(3575, 6) -- Iron Bar
@@ -497,14 +497,14 @@ if lib.env.is_turtle_wow then
         :AddReagent(55249, 2) -- Crystal Quartz 
         :AddReagent(3864, 2) -- Citrine
         :Save()
-    module:NewCraft(999927, "Ring of The Turtle", 160, {SpellSource.Trainer})
+    module:NewCraft(999927, "Ring of The Turtle", 160, {})
         :SetResult(56041)
         :AddRecipe(70114, Quality.Uncommon, {RecipeSource.Drop})
         :AddReagent(41331, 1) -- Rough Gold Ring
         :AddReagent(1206, 2) -- Moss Agate
         :AddReagent(3389, 1) -- Elixir of Defense
         :Save()
-    module:NewCraft(999926, "Gem Encrusted Choker", 160, {SpellSource.Trainer})
+    module:NewCraft(999926, "Gem Encrusted Choker", 160, {})
         :SetResult(56042)
         :AddRecipe(70116, Quality.Uncommon, {RecipeSource.Drop})
         :AddReagent(3575, 5) -- Iron Bar
@@ -512,14 +512,14 @@ if lib.env.is_turtle_wow then
         :AddReagent(55249, 1) -- Crystal Quartz 
         :AddReagent(1705, 1) -- Lesser Moonstone
         :Save()
-    module:NewCraft(999926, "Netherbane Rod", 160, {SpellSource.Trainer})
+    module:NewCraft(999926, "Netherbane Rod", 160, {})
         :SetResult(55335)
         :AddRecipe(70190, Quality.Uncommon, {RecipeSource.Drop})
         :AddReagent(3575, 6) -- Iron Bar
         :AddReagent(3864, 4) -- Citrine
         :AddReagent(55246, 2) -- Shimmering Oil
         :Save()
-    module:NewCraft(999924, "Centaur Hoof Circlet", 160, {SpellSource.Trainer})
+    module:NewCraft(999924, "Centaur Hoof Circlet", 160, {})
         :SetResult(55322)
         :AddRecipe(70147, Quality.Uncommon, {})
         :AddReagent(41332, 1) -- Rough Iron Ring
