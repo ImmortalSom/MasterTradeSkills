@@ -297,6 +297,13 @@ if lib.env.is_turtle_wow then
         :AddReagent(55249, 1) -- Crystal Quartz 
         :AddReagent(2880, 1) -- Weak Flux
         :Save()
+    module:NewCraft(999929, "Quartz Halo", 155, {SpellSource.Trainer})
+        :SetResult(55142)
+        :AddReagent(41332, 1) -- Rough Iron Ring
+        :AddReagent(55249, 2) -- Crystal Quartz 
+        :AddReagent(55151, 2) -- Coarse Gritted Paper
+        :AddReagent(55246, 1) -- Shimmering Oil
+        :Save()
 
 
     
