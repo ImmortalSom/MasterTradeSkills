@@ -326,7 +326,7 @@ if lib.env.is_turtle_wow then
         :AddReagent(2880, 3) -- Weak Flux
         :AddReagent(55150, 2) -- Rough Gritted Paper
         :Save()
-    module:NewCraft(999953, "Gloomweed Bindings", 80, {}) -- Надо перепроверить
+    module:NewCraft(999953, "Gloomweed Bindings", 80, {})
         :SetResult(55329)
         :AddRecipe(70155, Quality.Uncommon, {})
         :AddReagent(2840, 6) -- Copper Bar
@@ -375,13 +375,6 @@ if lib.env.is_turtle_wow then
         :AddReagent(2836, 4) -- Coarse Stone
         :AddReagent(55151, 2) -- Coarse Gritted Paper
         :Save()
-    module:NewCraft(999935, "Medallion of Flame", 100, {}) -- Надо перепроверить
-        :SetResult(56039)
-        -- :AddRecipe(70145, Quality.Uncommon, {RecipeSource.Drop})
-        :AddReagent(2841, 6) -- Bronze Bar
-        :AddReagent(2880, 1) -- Weak Flux
-        :AddReagent(10940, 1) -- Strange Dust
-        :Save()
     module:NewCraft(999960, "Shadowfall Jewel", 100, {})
         :SetResult(55318)
         :AddRecipe(70143, Quality.Uncommon, {RecipeSource.Drop})
@@ -418,6 +411,13 @@ if lib.env.is_turtle_wow then
         :AddReagent(2841, 10) -- Bronze Bar
         :AddReagent(1206, 2) -- Moss Agate
         :AddReagent(55245, 1) -- Polishing Oil
+        :Save()
+    module:NewCraft(999935, "Medallion of Flame", 110, {})
+        :SetResult(56039)
+        :AddRecipe(70112, Quality.Uncommon, {RecipeSource.Drop})
+        :AddReagent(2841, 6) -- Bronze Bar
+        :AddReagent(2880, 1) -- Weak Flux
+        :AddReagent(10940, 1) -- Strange Dust
         :Save()
     module:NewCraft(999931, "Ocean's Wrath", 115, {})
         :SetResult(55319)
