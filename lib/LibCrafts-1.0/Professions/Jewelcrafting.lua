@@ -482,6 +482,14 @@ if lib.env.is_turtle_wow then
         :AddReagent(55246, 2) -- Shimmering Oil
         :AddReagent(55247, 1) -- Gemstone Oil
         :Save()
+    module:NewCraft(999928, "Gemmed Citrine Pendant", 160, {SpellSource.Trainer})
+        :SetResult(55202)
+        :AddRecipe(70104, Quality.Rare, {RecipeSource.Drop})
+        :AddReagent(3575, 6) -- Iron Bar
+        :AddReagent(3577, 1) -- Gold Bar
+        :AddReagent(55249, 2) -- Crystal Quartz 
+        :AddReagent(3864, 2) -- Citrine
+        :Save()
 
 
 
