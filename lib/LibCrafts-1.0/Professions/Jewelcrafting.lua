@@ -474,6 +474,13 @@ if lib.env.is_turtle_wow then
         :AddReagent(3388, 2) -- Strong Troll's Blood Potion
         :AddReagent(55151, 2) -- Coarse Gritted Paper
         :Save()
+    module:NewCraft(999925, "Harpy Talon Ring", 145, {SpellSource.Trainer})
+        :SetResult(55321)
+        :AddRecipe(70146, Quality.Uncommon, {})
+        :AddReagent(55174, 1) -- Rough Bronze Ring
+        :AddReagent(5635, 4) -- Sharp Claw
+        :AddReagent(55151, 2) -- Coarse Gritted Paper
+        :Save()
     module:NewCraft(999942, "Shimmering Aqua Gemstone", 150, {})
         :SetResult(56003)
         :AddRecipe(70159, Quality.Uncommon, {})
