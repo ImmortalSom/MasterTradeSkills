@@ -490,6 +490,13 @@ if lib.env.is_turtle_wow then
         :AddReagent(55249, 2) -- Crystal Quartz 
         :AddReagent(3864, 2) -- Citrine
         :Save()
+    module:NewCraft(999927, "Ring of The Turtle", 160, {SpellSource.Trainer})
+        :SetResult(56041)
+        :AddRecipe(70114, Quality.Uncommon, {RecipeSource.Drop})
+        :AddReagent(41331, 1) -- Rough Gold Ring
+        :AddReagent(1206, 2) -- Moss Agate
+        :AddReagent(3389, 1) -- Elixir of Defense
+        :Save()
 
 
 
