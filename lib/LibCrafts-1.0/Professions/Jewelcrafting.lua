@@ -519,6 +519,14 @@ if lib.env.is_turtle_wow then
         :AddReagent(3864, 4) -- Citrine
         :AddReagent(55246, 2) -- Shimmering Oil
         :Save()
+    module:NewCraft(999924, "Centaur Hoof Circlet", 160, {SpellSource.Trainer})
+        :SetResult(55322)
+        :AddRecipe(70147, Quality.Uncommon, {})
+        :AddReagent(41332, 1) -- Rough Iron Ring
+        :AddReagent(7067, 1) -- Elemental Earth
+        :AddReagent(3466, 1) -- Strong Flux
+        :AddReagent(55151, 2) -- Coarse Gritted Paper
+        :Save()
 
 
 
