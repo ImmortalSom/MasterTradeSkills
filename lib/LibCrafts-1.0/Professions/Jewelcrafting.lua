@@ -512,7 +512,7 @@ if lib.env.is_turtle_wow then
         :AddReagent(55249, 1) -- Crystal Quartz 
         :AddReagent(1705, 1) -- Lesser Moonstone
         :Save()
-    module:NewCraft(999926, "Netherbane Rod", 160, {})
+    module:NewCraft(999923, "Netherbane Rod", 160, {})
         :SetResult(55335)
         :AddRecipe(70190, Quality.Uncommon, {RecipeSource.Drop})
         :AddReagent(3575, 6) -- Iron Bar
