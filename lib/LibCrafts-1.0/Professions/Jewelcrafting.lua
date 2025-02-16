@@ -1,4 +1,4 @@
--- 
+-- 999922
 local lib = LibCraftsGetLibrary()
 local name, version = "Professions-Jewelcrafting", 2
 local module = --[[---@type LcProfessionModule]] lib:RegisterProfessionModule(name, version, "Jewelcrafting")
@@ -312,6 +312,14 @@ if lib.env.is_turtle_wow then
         :AddRecipe(50298, Quality.Uncommon, {RecipeSource.Drop})
         :AddReagent(55156, 1) -- Rough Copper Ring
         :AddReagent(3382, 1) -- Weak Troll's Blood Potion
+        :AddReagent(55245, 1) -- Polishing Oil
+        :Save()
+    module:NewCraft(999922, "Small Pearl Ring", 65, {})
+        :SetResult(55169)
+        :AddRecipe(56021, Quality.Uncommon, {})
+        :AddReagent(55156, 1) -- Rough Copper Ring
+        :AddReagent(5498, 1) -- Small Lustrous Pearl
+        :AddReagent(55150, 2) -- Rough Gritted Paper
         :AddReagent(55245, 1) -- Polishing Oil
         :Save()
     module:NewCraft(999937, "Copper Bangle", 70, {}) -- Надо перепроверить
