@@ -1,4 +1,4 @@
--- 999909
+-- 999908
 local lib = LibCraftsGetLibrary()
 local name, version = "Professions-Jewelcrafting", 2
 local module = --[[---@type LcProfessionModule]] lib:RegisterProfessionModule(name, version, "Jewelcrafting")
@@ -365,6 +365,12 @@ if lib.env.is_turtle_wow then
         :AddReagent(2838, 6) -- Heavy Stone
         :AddReagent(3355, 1) -- Wild Steelbloom
         :AddReagent(55152, 2) -- Heavy Gritted Paper
+        :Save()
+    module:NewCraft(999908, "Shimmering Gold Necklace", 190, {SpellSource.Trainer})
+        :SetResult(41340)
+        :AddReagent(3577, 8) -- Gold Bar
+        :AddReagent(55246, 3) -- Shimmering Oil
+        :AddReagent(55152, 3) -- Heavy Gritted Paper
         :Save()
 
 
