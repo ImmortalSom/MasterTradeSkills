@@ -1,4 +1,4 @@
--- 999921
+-- 999920
 local lib = LibCraftsGetLibrary()
 local name, version = "Professions-Jewelcrafting", 2
 local module = --[[---@type LcProfessionModule]] lib:RegisterProfessionModule(name, version, "Jewelcrafting")
@@ -303,6 +303,14 @@ if lib.env.is_turtle_wow then
         :AddReagent(55249, 2) -- Crystal Quartz 
         :AddReagent(55151, 2) -- Coarse Gritted Paper
         :AddReagent(55246, 1) -- Shimmering Oil
+        :Save()
+    module:NewCraft(999920, "Staff of Blossomed Jade", 165, {SpellSource.Trainer})
+        :SetResult(55148)
+        :AddReagent(3575, 12) -- Iron Bar
+        :AddReagent(1529, 2) -- Jade
+        :AddReagent(1705, 2) -- Lesser Moonstone
+        :AddReagent(3357, 2) -- Liferoot
+        :AddReagent(55247, 1) -- Gemstone Oil
         :Save()
 
 
