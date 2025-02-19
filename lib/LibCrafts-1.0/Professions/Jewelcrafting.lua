@@ -535,6 +535,15 @@ if lib.env.is_turtle_wow then
         :AddReagent(3466, 1) -- Strong Flux
         :AddReagent(55151, 2) -- Coarse Gritted Paper
         :Save()
+    module:NewCraft(999921, "Ogre Bone Band", 170, {})
+        :SetResult(55323)
+        :AddRecipe(70148, Quality.Rare, {RecipeSource.Drop})
+        :AddReagent(41332, 1) -- Rough Iron Ring
+        :AddReagent(55249, 4) -- Crystal Quartz
+        :AddReagent(3864, 4) -- Citrine
+        :AddReagent(3391, 1) -- Elixir of Ogre's Strength
+        :AddReagent(3466, 2) -- Strong Flux
+        :Save()
 
 
 
