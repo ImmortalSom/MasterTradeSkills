@@ -607,7 +607,7 @@ if lib.env.is_turtle_wow then
         :AddReagent(3577, 2) -- Gold Bar
         :Save()
     module:NewCraft(999911, "Marine's Demise", 190, {})
-        :AddRecipe(70151, Quality.Rare, {RecipeSource.Drop})
+        :AddRecipe(70151, Quality.Uncommon, {RecipeSource.Drop})
         :SetResult(55325)
         :AddReagent(41322, 1) -- Rough Mithril Ring
         :AddReagent(7909, 2) -- Aquamarine
