@@ -1,4 +1,4 @@
--- 999913
+-- 999912
 local lib = LibCraftsGetLibrary()
 local name, version = "Professions-Jewelcrafting", 2
 local module = --[[---@type LcProfessionModule]] lib:RegisterProfessionModule(name, version, "Jewelcrafting")
@@ -350,6 +350,13 @@ if lib.env.is_turtle_wow then
         :AddReagent(4234, 2) -- Heavy Leather
         :AddReagent(3466, 2) -- Strong Flux
         :AddReagent(3825, 1) -- Elixir of Fortitude
+        :Save()
+    module:NewCraft(999912, "Ironsun Citrine Ring", 185, {SpellSource.Trainer})
+        :SetResult(55141)
+        :AddReagent(41332, 1) -- Rough Iron Ring
+        :AddReagent(3577, 2) -- Gold Bar
+        :AddReagent(3864, 4) -- Citrine
+        :AddReagent(55246, 1) -- Shimmering Oil
         :Save()
 
 
