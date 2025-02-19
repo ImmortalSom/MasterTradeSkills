@@ -599,7 +599,7 @@ if lib.env.is_turtle_wow then
         :AddReagent(3466, 2) -- Strong Flux
         :Save()
     module:NewCraft(999913, "Specter's Shade Ring", 180, {})
-        :AddRecipe(70149, Quality.Rare, {RecipeSource.Drop})
+        :AddRecipe(70149, Quality.Uncommon, {RecipeSource.Drop})
         :SetResult(55324)
         :AddReagent(41332, 1) -- Rough Iron Ring
         :AddReagent(11135, 1) -- Greater Mystic Essence
