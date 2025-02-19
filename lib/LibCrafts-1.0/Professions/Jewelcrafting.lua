@@ -1,4 +1,4 @@
--- 999917
+-- 999916
 local lib = LibCraftsGetLibrary()
 local name, version = "Professions-Jewelcrafting", 2
 local module = --[[---@type LcProfessionModule]] lib:RegisterProfessionModule(name, version, "Jewelcrafting")
@@ -330,6 +330,15 @@ if lib.env.is_turtle_wow then
         :AddReagent(3575, 8) -- Iron Bar
         :AddReagent(3577, 2) -- Gold Bar
         :AddReagent(55249, 2) -- Crystal Quartz
+        :Save()
+    module:NewCraft(999916, "Powerful Citrine Pendant", 175, {SpellSource.Trainer})
+        :SetResult(55147)
+        :AddReagent(3575, 12) -- Iron Bar
+        :AddReagent(3577, 4) -- Gold Bar
+        :AddReagent(3864, 4) -- Citrine
+        :AddReagent(1206, 2) -- Moss Agate
+        :AddReagent(55247, 1) -- Gemstone Oil
+        :AddReagent(11135, 1) -- Greater Mystic Essence
         :Save()
 
 
