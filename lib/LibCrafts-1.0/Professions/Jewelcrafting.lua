@@ -1,4 +1,4 @@
--- 999915
+-- 999914
 local lib = LibCraftsGetLibrary()
 local name, version = "Professions-Jewelcrafting", 2
 local module = --[[---@type LcProfessionModule]] lib:RegisterProfessionModule(name, version, "Jewelcrafting")
@@ -343,6 +343,13 @@ if lib.env.is_turtle_wow then
     module:NewCraft(999915, "Rough Mithril Ring", 175, {SpellSource.Trainer})
         :SetResult(41322)
         :AddReagent(3860, 2) -- Mithril Bar
+        :Save()
+    module:NewCraft(999914, "The Golden Goblet", 175, {SpellSource.Trainer})
+        :SetResult(55146)
+        :AddReagent(3577, 2) -- Gold Bar
+        :AddReagent(4234, 2) -- Heavy Leather
+        :AddReagent(3466, 2) -- Strong Flux
+        :AddReagent(3825, 1) -- Elixir of Fortitude
         :Save()
 
 
