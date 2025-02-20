@@ -1,4 +1,4 @@
--- 999906
+-- 999905
 local lib = LibCraftsGetLibrary()
 local name, version = "Professions-Jewelcrafting", 2
 local module = --[[---@type LcProfessionModule]] lib:RegisterProfessionModule(name, version, "Jewelcrafting")
@@ -650,6 +650,13 @@ if lib.env.is_turtle_wow then
         :AddReagent(1705, 8) -- Lesser Moonstone
         :AddReagent(55246, 2) -- Shimmering Oil
         :AddReagent(55152, 4) -- Heavy Gritted Paper
+        :Save()
+    module:NewCraft(999905, "Smoldering Brooch", 200, {})
+        :AddRecipe(70196, Quality.Uncommon, {RecipeSource.Drop})
+        :SetResult(55212)
+        :AddReagent(3860, 3) -- Mithril Bar
+        :AddReagent(55250, 2) -- Emberstone
+        :AddReagent(55153, 2) -- Solid Gritted Paper
         :Save()
 
 
