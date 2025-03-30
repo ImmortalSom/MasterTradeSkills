@@ -1,4 +1,4 @@
--- 999903
+-- 999902
 local lib = LibCraftsGetLibrary()
 local name, version = "Professions-Jewelcrafting", 2
 local module = --[[---@type LcProfessionModule]] lib:RegisterProfessionModule(name, version, "Jewelcrafting")
@@ -618,6 +618,13 @@ if lib.env.is_turtle_wow then
         :AddReagent(4306, 2) -- Silk Cloth        
         :AddReagent(3864, 2) -- Citrine
         :SetResult(55332)
+        :Save()
+    module:NewCraft(999902, "Obsidian Brooch", 175, {})
+        :AddRecipe(70195, Quality.Uncommon, {}) -- Надо перепроверить
+        :AddReagent(3859, 4) -- Steel Bar
+        :AddReagent(1529, 2) -- Jade
+        :AddReagent(55152, 2) -- Heavy Gritted Paper
+        :SetResult(55211)
         :Save()
     module:NewCraft(999913, "Specter's Shade Ring", 180, {})
         :AddRecipe(70149, Quality.Uncommon, {RecipeSource.Drop})
