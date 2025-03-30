@@ -1,7 +1,7 @@
 -- 999901
 local lib = LibCraftsGetLibrary()
 local name, version = "Professions-Jewelcrafting", 2
-local module = --[[---@type LcProfessionModule]] lib:RegisterProfessionModule(name, version, "Jewelcrafting")
+local module = --[[---@type LcProfessionModule]] lib:RegisterProfessionModule(name, version, "Jewelcrafting") # --]]
 if not module then return end
 
 local Quality = lib.constants.qualities
@@ -55,13 +55,6 @@ if lib.env.is_turtle_wow then
     module:NewCraft(999992, "Copper Staff", 40, {SpellSource.Trainer})
         :SetResult(81092)
         :AddReagent(2840, 4) -- Copper Bar
-        :AddReagent(55245, 1) -- Polishing Oil
-        :Save()
-    module:NewCraft(999932, "Bulky Copper Ring", 40, {}) -- Надо перепроверить
-        :SetResult(81093)
-        -- :AddRecipe(70145, Quality.Uncommon, {RecipeSource.Drop})
-        :AddReagent(55156, 1) -- Rough Copper Ring
-        :AddReagent(2880, 1) -- Weak Flux
         :AddReagent(55245, 1) -- Polishing Oil
         :Save()
     module:NewCraft(999991, "Encrusted Copper Bangle", 50, {SpellSource.Trainer})
@@ -375,6 +368,13 @@ if lib.env.is_turtle_wow then
 
 
     
+    module:NewCraft(999932, "Bulky Copper Ring", 25, {})
+        :SetResult(81093)
+        :AddRecipe(56022, Quality.Uncommon, {RecipeSource.Drop})
+        :AddReagent(55156, 1) -- Rough Copper Ring
+        :AddReagent(2880, 1) -- Weak Flux
+        :AddReagent(55245, 1) -- Polishing Oil
+        :Save()
     module:NewCraft(999933, "Minor Trollblood Ring", 50, {})
         :SetResult(55164)
         :AddRecipe(50298, Quality.Uncommon, {RecipeSource.Drop})
@@ -603,6 +603,13 @@ if lib.env.is_turtle_wow then
         :AddReagent(3466, 1) -- Strong Flux
         :AddReagent(55151, 2) -- Coarse Gritted Paper
         :Save()
+    module:NewCraft(999901, "Sphinx's Wisdom Staff", 170, {}) -- Надо перепроверить. WTF
+        :SetResult(55328)
+         -- :AddRecipe(70154, Quality.Uncommon, {})
+        :AddReagent(3575, 18) -- Iron Bar
+        :AddReagent(2838, 2) -- Heavy Stone
+        :AddReagent(3864, 2) -- Citrine
+        :Save()
     module:NewCraft(999921, "Ogre Bone Band", 170, {})
         :SetResult(55323)
         :AddRecipe(70148, Quality.Rare, {RecipeSource.Drop})
@@ -613,75 +620,68 @@ if lib.env.is_turtle_wow then
         :AddReagent(3466, 2) -- Strong Flux
         :Save()
     module:NewCraft(999903, "Monastery Emberbrace", 170, {})
+        :SetResult(55332)
         :AddRecipe(70187, Quality.Uncommon, {}) -- Надо перепроверить
         :AddReagent(3859, 6) -- Steel Bar
         :AddReagent(4306, 2) -- Silk Cloth
         :AddReagent(3864, 2) -- Citrine
-        :SetResult(55332)
-        :Save()
-    module:NewCraft(999901, "Sphinx's Wisdom Staff", 170, {})
-        :AddRecipe(70154, Quality.Uncommon, {}) -- Надо перепроверить
-        :AddReagent(3575, 18) -- Iron Bar
-        :AddReagent(2838, 2) -- Heavy Stone
-        :AddReagent(3864, 2) -- Citrine
-        :SetResult(55328)
         :Save()
     module:NewCraft(999902, "Obsidian Brooch", 175, {})
+        :SetResult(55211)
         :AddRecipe(70195, Quality.Uncommon, {}) -- Надо перепроверить
         :AddReagent(3859, 4) -- Steel Bar
         :AddReagent(1529, 2) -- Jade
         :AddReagent(55152, 2) -- Heavy Gritted Paper
-        :SetResult(55211)
         :Save()
     module:NewCraft(999913, "Specter's Shade Ring", 180, {})
-        :AddRecipe(70149, Quality.Uncommon, {RecipeSource.Drop})
         :SetResult(55324)
+        :AddRecipe(70149, Quality.Uncommon, {RecipeSource.Drop})
         :AddReagent(41332, 1) -- Rough Iron Ring
         :AddReagent(11135, 1) -- Greater Mystic Essence
         :AddReagent(55152, 1) -- Heavy Gritted Paper
         :AddReagent(3577, 2) -- Gold Bar
         :Save()
     module:NewCraft(999904, "Facetted Moonstone Brooch", 185, {})
-        :AddRecipe(70194, Quality.Uncommon, {}) -- Надо перепроверить
         :SetResult(55210)
+        :AddRecipe(70194, Quality.Uncommon, {}) -- Надо перепроверить
         :AddReagent(3859, 3) -- Steel Bar
         :AddReagent(1705, 2) -- Lesser Moonstone
         :AddReagent(55152, 2) -- Heavy Gritted Paper
         :Save()
     module:NewCraft(999911, "Marine's Demise", 190, {})
-        :AddRecipe(70151, Quality.Uncommon, {RecipeSource.Drop})
         :SetResult(55325)
+        :AddRecipe(70151, Quality.Uncommon, {RecipeSource.Drop})
         :AddReagent(41322, 1) -- Rough Mithril Ring
         :AddReagent(7909, 2) -- Aquamarine
         :AddReagent(1210, 2) -- Shadowgem
         :AddReagent(55246, 1) -- Shimmering Oil
         :Save()
     module:NewCraft(999910, "Ocean's Gaze", 190, {})
-        :AddRecipe(70151, Quality.Uncommon, {RecipeSource.Drop})
         :SetResult(56023)
+        :AddRecipe(70151, Quality.Uncommon, {RecipeSource.Drop})
         :AddReagent(41322, 1) -- Rough Mithril Ring
         :AddReagent(7909, 3) -- Aquamarine
         :AddReagent(6372, 3) -- Swim Speed Potion
         :AddReagent(55152, 3) -- Heavy Gritted Paper
         :Save()
     module:NewCraft(999907, "Marine Root", 200, {})
-        :AddRecipe(70191, Quality.Uncommon, {RecipeSource.Drop})
         :SetResult(55336)
+        :AddRecipe(70191, Quality.Uncommon, {RecipeSource.Drop})
         :AddReagent(3860, 2) -- Mithril Bar
         :AddReagent(3357, 2) -- Liferoot
         :AddReagent(7909, 2) -- Aquamarine
         :Save()
     module:NewCraft(999906, "Shimmering Moonstone Tablet", 200, {})
-        :AddRecipe(70108, Quality.Uncommon, {RecipeSource.Drop})
         :SetResult(56034)
+        :AddRecipe(70108, Quality.Uncommon, {RecipeSource.Drop})
         :AddReagent(55251, 2) -- Pure Moonstone
         :AddReagent(1705, 8) -- Lesser Moonstone
         :AddReagent(55246, 2) -- Shimmering Oil
         :AddReagent(55152, 4) -- Heavy Gritted Paper
         :Save()
     module:NewCraft(999905, "Smoldering Brooch", 200, {})
-        :AddRecipe(70196, Quality.Uncommon, {RecipeSource.Drop})
         :SetResult(55212)
+        :AddRecipe(70196, Quality.Uncommon, {RecipeSource.Drop})
         :AddReagent(3860, 3) -- Mithril Bar
         :AddReagent(55250, 2) -- Emberstone
         :AddReagent(55153, 2) -- Solid Gritted Paper
