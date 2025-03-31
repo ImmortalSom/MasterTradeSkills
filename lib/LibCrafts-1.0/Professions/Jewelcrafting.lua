@@ -1,7 +1,7 @@
 -- 999901
 local lib = LibCraftsGetLibrary()
 local name, version = "Professions-Jewelcrafting", 2
-local module = --[[---@type LcProfessionModule]] lib:RegisterProfessionModule(name, version, "Jewelcrafting") # --]]
+local module =  lib:RegisterProfessionModule(name, version, "Jewelcrafting")
 if not module then return end
 
 local Quality = lib.constants.qualities
